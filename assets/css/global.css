@@ -1,34 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
 * {
     margin: 0;
     padding: 0;
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'eurostile', sans-serif;
+    font-family: 'Alegreya', serif;
 }
 
+html{
+    background:url(../img/background.png);
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+body{
+    background-color: #0000009d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
 .container {
-    width: min(100% - 10px, 1200px);
+    width: 100vw;
     margin-inline: auto;
     display: flex;
     justify-content: center;
+    background-color: #1f501485;
+    height: 31vh;
+    
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 200px;
+    width: min(100% - 10px, 1200px);
+    height: 300px;
 }
 
 /*LOGO TIPO E TITULO*/
-.logo {
+.logo{
     display: flex;
     align-items: center;
     width: 100%;
-    color: rgb(0, 73, 168);
-
+    color: rgb(255, 255, 255);
+    height: 70%;
+    
 }
+
 
 .logo-img {
     max-width: 150px;
@@ -36,9 +59,6 @@ header {
     margin-left: 20px;
 }
 
-.logo h3 {
-    font-size: 10px;
-}
 
 /* MENU DE NAVEGAÇÃO*/
 .menu {
@@ -50,14 +70,15 @@ header {
 }
 
 .menu a {
+    font-family: 'Overpass', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 20px;
     width: 180px;
     height: 50px;
     border-width: 2px;
-    color: rgb(0, 73, 168);
+    color: #FFF;
     font-weight: bold;
     border-top-left-radius: 10px;
     border-top-right-radius: 15px;
@@ -69,7 +90,15 @@ header {
 
 .menu a:hover {
 
-    background: linear-gradient(#ffffff, #7acaff);
+    
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: min(100% - 10px, 1200px);
+    background-color: #fff;
+    height: 69vh;
 }
 
 
