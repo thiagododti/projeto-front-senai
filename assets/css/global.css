@@ -4,10 +4,13 @@
 html {
     --sizeBody: min(100% - 10px, 1300px);
 
-    --hfBackground: rgba(13, 59, 9, 0.37);
+    --hfBackground: rgb(24, 66, 33);
     --fontColor: rgb(147, 192, 143);
     --background: rgba(0, 0, 0, 0.719);
-
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: .8em;
 }
 
 * {
@@ -41,6 +44,52 @@ body {
     justify-content: center;
 }
 
+.content-body{
+    width: var(--sizeBody);
+    
+
+}
+
+.content-section{
+    width: var(--sizeBody);
+    background-color: rgba(255, 211, 211, 0.555);
+    height: 100vh;
+    padding-top: 20vh;
+
+}
+.content-section:nth-child(2){
+    width: var(--sizeBody);
+    background-color: rgba(126, 12, 12, 0.479);
+    height: 100vh;
+    padding-top: 20vh;
+}
+.content-section:nth-child(3){
+    width: var(--sizeBody);
+    background-color: rgba(255, 211, 211, 0.555);
+    height: 100vh;
+    padding-top: 20vh;   
+}
+.content-section:nth-child(4){
+    width: var(--sizeBody);
+    background-color: rgba(126, 12, 12, 0.479);
+    height: 100vh;
+    padding-top: 20vh;   
+}
+.content-section:nth-child(5){
+    width: var(--sizeBody);
+    background-color: rgba(255, 211, 211, 0.555);
+    height: 100vh;
+    padding-top: 20vh;
+}
+.content-section:nth-child(6){
+    width: var(--sizeBody);
+    background-color: rgba(126, 12, 12, 0.479);
+    height: 100vh;
+    padding-top: 20vh;
+}
+
+
+
 /* HEADER */
 header {
     width: 100vw;
@@ -48,7 +97,9 @@ header {
     display: flex;
     justify-content: center;
     color: var(--fontColor);
-    height: 200px;
+    height: 20vh;
+    position: fixed;
+    z-index: 2;
 
 }
 
@@ -75,7 +126,7 @@ header .menu a {
     font-weight: 900;
     font-size: 14px;
     color: #fff;
-    background-color: #054707cc;
+    background-color: #18751bcc;
     padding: 10px 30px;
     border: none;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
